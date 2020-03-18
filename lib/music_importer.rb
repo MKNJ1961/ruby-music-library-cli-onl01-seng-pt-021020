@@ -8,7 +8,8 @@ class MusicImporter
   end
 
   def files
-    ruby-music-library-cli-onl01-seng-pt-021020\spec\fixtures
+    @files=Dir.glob(self.path+"/*.mp3")
+    @files.collect {|file| File.basename(file)}
   end
 
 end
