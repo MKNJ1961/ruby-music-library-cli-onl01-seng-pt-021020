@@ -1,3 +1,5 @@
 module Concerns::Findable
-
-end
+  
+  def find_by_name(name)
+    all.find{ |x| x.name == name}
+  end
