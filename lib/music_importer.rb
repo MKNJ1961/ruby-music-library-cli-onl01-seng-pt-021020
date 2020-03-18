@@ -8,8 +8,7 @@ class MusicImporter
   end
 
   def files
-
-
+    Dir../spec/fixtures/mp3s
   end
 
 end
