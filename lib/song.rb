@@ -1,7 +1,5 @@
-
-require'pry'
 class Song
-
+  extends Concerns::Findable
   attr_accessor :name
   attr_reader :artist, :genre
 
