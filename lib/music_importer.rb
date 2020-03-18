@@ -8,7 +8,7 @@ class MusicImporter
   end
 
   def files
-  path = ./spec/fixtures/mp3s"
+  
 
   end
 
