@@ -1,3 +1,5 @@
+
+require'pry'
 class Song
 
   attr_accessor :name
@@ -35,7 +37,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    all.find(&:name)
+    binding.pry
   end
 
   def self.create(name)
