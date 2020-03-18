@@ -31,7 +31,7 @@ class Artist
     song.artist = self unless song.artist
     songs.push song
   end
-  
+
 
 end
 
