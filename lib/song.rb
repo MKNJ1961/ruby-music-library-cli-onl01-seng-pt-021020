@@ -1,6 +1,6 @@
 class Song
-  extend Concerns::Findable
-  include Concerns::Savable
+  # extend Concerns::Findable
+  # include Concerns::Savable
 
   @@all = []
 
