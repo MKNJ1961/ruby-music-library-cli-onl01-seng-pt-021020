@@ -37,9 +37,9 @@ class Song
   def self.find_by_name(name)
     all.find(&:name)
   end
-    
+
   end
-    
+
 
   def self.create(name)
     song = new(name)
