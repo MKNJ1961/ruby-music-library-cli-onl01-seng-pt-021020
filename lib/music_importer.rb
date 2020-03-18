@@ -8,7 +8,7 @@ class MusicImporter
   end
 
   def files
-    Dir.glob("#{(path}/*").map{ |file| file.gsub("#{path}/", '')})
+  path = ./spec/fixtures/mp3s"
 
   end
 
