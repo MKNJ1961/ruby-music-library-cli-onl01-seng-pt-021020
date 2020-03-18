@@ -32,6 +32,10 @@ class Artist
     songs.push song unless songs.include?(song)
   end
 
+  def genres
+    songs.each(&:genre)
+  end
+
 
 end
 
