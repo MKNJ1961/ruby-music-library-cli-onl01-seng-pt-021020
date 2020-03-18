@@ -8,7 +8,7 @@ class MusicImporter
   end
 
   def files
-    Dir./spec/fixtures/mp3s
+    ruby-music-library-cli-onl01-seng-pt-021020\spec\fixtures
   end
 
 end
