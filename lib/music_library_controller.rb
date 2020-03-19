@@ -45,6 +45,7 @@ class MusicLibraryController
       puts "#{idx}. #{gn.name}"
     end
   end
+  end
 
   def list_songs_by_artist
     puts "Please enter name of an artist."
