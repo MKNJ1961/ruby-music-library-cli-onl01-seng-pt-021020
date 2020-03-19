@@ -25,24 +25,7 @@ class MusicLibraryController
       puts "What would you like to do?"
 
       input = gets.strip
-      case input.downcase
-   when "list songs"
-     list_songs
-   when "list artists"
-     list_artists
-   when "list genres"
-     list_genres
-   when "list artist"
-     list_songs_by_artist
-   when "list genre"
-     list_songs_by_genre
-   when "play song"
-     play_song
-   when "exit"
-     return
-   else
-     call
-   end
+    
     end
   end
 
@@ -95,5 +78,5 @@ class MusicLibraryController
       puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
-
+  
 end
