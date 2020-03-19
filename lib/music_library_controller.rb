@@ -42,6 +42,7 @@ class MusicLibraryController
         return
       else
         call
+      end
     end
   end
 
