@@ -42,7 +42,6 @@ class MusicLibraryController
         return
       else
         call
-      end
     end
   end
 
@@ -83,8 +82,7 @@ class MusicLibraryController
       end
     end
   end
-
-
+  
   def play_song
     puts "Which song number would you like to play?"
     song_num = gets.strip.to_i
