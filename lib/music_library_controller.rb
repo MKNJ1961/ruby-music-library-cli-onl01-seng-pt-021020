@@ -40,7 +40,7 @@ class MusicLibraryController
         list play_song
       when "exit"
         return
-      else 
+      else
         call
     end
   end
