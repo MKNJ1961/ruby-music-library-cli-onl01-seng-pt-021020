@@ -1,6 +1,6 @@
 class MusicLibraryController
   attr_accessor :path, :music_importer
-  
+
   def initialize(path='./db/mp3s')
     @path = path
     @music_importer = MusicImporter.new(@path).tap do |importer|
@@ -79,21 +79,21 @@ end
 
 
 # class MusicLibraryController
-# 
+#
 #   attr_accessor :path, :music_importer
-# 
-# 
+#
+#
 #   def initialize(path='./db/mp3s')
 #     @path = path
 #     @music_importer = MusicImporter.new(@path).tap do |importer|
 #       importer.import
 #     end
 #   end
-# 
+#
 #   def call
 #     input = ''
 #     while input != 'exit'
-# 
+#
 #       puts "Welcome to your music library!"
 #       puts "To list all of your songs, enter 'list songs'."
 #       puts "To list all of the artists in your library, enter 'list artists'."
@@ -103,29 +103,29 @@ end
 #       puts "To play a song, enter 'play song'."
 #       puts "To quit, type 'exit'."
 #       puts "What would you like to do?"
-# 
+#
 #       input = gets.strip
 #     end
 #   end
-# 
+#
 #   def list_songs
 #     Song.all.sort_by(&:name).each.with_index(1) do |song, idx|
 #       puts "#{idx}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
 #     end
 #   end
-# 
+#
 #   def list_artists
 #     Artist.all.sort_by(&:name).each.with_index(1) do |art, idx|
 #       puts "#{idx}. #{art.name}"
 #     end
 #   end
-# 
+#
 #   def list_genres
 #     Genre.all.sort_by(&:name).each.with_index(1) do |gn, idx|
 #       puts "#{idx}. #{gn.name}"
 #     end
 #   end
-# 
+#
 #   def list_songs_by_artist
 #     puts "Please enter the name of an artist:"
 #       input = gets.strip
@@ -135,7 +135,7 @@ end
 #       end
 #     end
 #   end
-# 
+#
 #   def list_songs_by_genre
 #     puts "Please enter the name of a genre:"
 #       input = gets.strip
@@ -145,11 +145,11 @@ end
 #       end
 #     end
 #   end
-# 
+#
 #   def play_song
 #     puts "Which song number would you like to play?"
 #     input = gets.strip
-# 
+#
 #     if song_index = input.to_i
 #       song = Song.all[song_index -1]
 #       puts "Playing #{song.name} by #{song.artist.name}"
